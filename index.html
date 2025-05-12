@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculator + Profile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <div class="about-me">
+      <h1>Hi, I'm Kaleeswaran 👋</h1>
+      <p>
+        🚀 Cybersecurity student with a passion for Fullstack creative development.
+        Builder of real-world solutions like waste management systems. Also a pencil artist @artbykalees.
+      </p>
+    </div>
+
+    <div class="main-content">
+      <div class="calculator">
+        <input type="text" id="display" disabled />
+        <div class="buttons">
+          <button onclick="clearDisplay()">C</button>
+          <button onclick="appendValue('(')">(</button>
+          <button onclick="appendValue(')')">)</button>
+          <button onclick="appendValue('%')">%</button>
+
+          <button onclick="appendValue('7')">7</button>
+          <button onclick="appendValue('8')">8</button>
+          <button onclick="appendValue('9')">9</button>
+          <button onclick="appendValue('/')">÷</button>
+
+          <button onclick="appendValue('4')">4</button>
+          <button onclick="appendValue('5')">5</button>
+          <button onclick="appendValue('6')">6</button>
+          <button onclick="appendValue('*')">×</button>
+
+          <button onclick="appendValue('1')">1</button>
+          <button onclick="appendValue('2')">2</button>
+          <button onclick="appendValue('3')">3</button>
+          <button onclick="appendValue('-')">−</button>
+
+          <button onclick="appendValue('0')">0</button>
+          <button onclick="appendValue('.')">.</button>
+          <button onclick="calculate()">=</button>
+          <button onclick="appendValue('+')">+</button>
+        </div>
+      </div>
+
+      <div class="extra-info">
+        <br>
+        <h2>📚 Education</h2>
+        <p>B.Sc. Cybersecurity @ Rathinam College</p>
+<br>
+        <h2>🛠️ Skills</h2>
+        <ul>
+          <li>Python, Java, C, Bash</li>
+          <li>MySQL,postgresql,html,css,js</li>
+          <li>Nmap, Wireshark, Burp Suite</li>
+        </ul>
+
+        <h2>🎯 Goals</h2>
+        <ul>
+          <li>Master AI & cybersecurity tools</li>
+          <li>Contribute to open-source security tools</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
