@@ -1,15 +1,51 @@
 <!-- @author:kaleeswaran.s -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kali - Calculator</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+
+    <title>Coming Soon ..... 💻</title>
+    <meta name="description" content="Our website is currently under development. Stay tuned for something amazing!">
+  
+
+    <meta name="keywords" content="Coming Soon, Under Development, Website Launch, New Features">
+
+    <meta name="author" content="Kaleeswaran S">
+  
+
+    <meta name="theme-color" content="#111111">
+  
+
+    <meta property="og:title" content="Coming Soon ..... 💻" />
+    <meta property="og:description" content="We're building something awesome. Hang tight!" />
+    <meta property="og:image" content="https://yourdomain.com/preview-image.jpg" />
+    <meta property="og:url" content="https://yourdomain.com" />
+    <meta property="og:type" content="website" />
+  
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Coming Soon ..... 💻" />
+    <meta name="twitter:description" content="Website is launching soon. Get ready!" />
+    <meta name="twitter:image" content="https://yourdomain.com/preview-image.jpg" />
+  
+
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <link rel="stylesheet" href="style.css" />
+  
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  </head>
+  
 <body>
   <div class="container">
     <div class="about-me">
+      <button id="themeToggle" onclick="toggleTheme()">🌗 Dynamic View</button>
+      <h3 id="greeting"></h3>
+
       <h1>Hi, I'm Kaleeswaran 👋</h1>
       <p>
         🚀 Cybersecurity student with a passion for Fullstack creative development.
@@ -69,6 +105,46 @@
     </div>
   </div>
 
+  <!-- Portfolio Section -->
+  <div class="portfolio-section">
+    <h2>Explore My Professional Projects <i class="fas fa-laptop-code"></i></h2>
+    <p>As a developer and cybersecurity enthusiast, I have worked on several impactful projects that focus on security, automation, and development. Check out my work below:</p>
+    <a href="https://https://kaleeswarans-cyber00.github.io/projects/" target="_blank" class="portfolio-btn">
+      <i class="fas fa-arrow-right"></i> Visit My Portfolio
+    </a>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>Developed by <span class="developer-name">Kaleeswaran S. <i class="fas fa-user"></i></span></p>
+    <p>Cybersecurity Enthusiast & Full-Stack Developer <i class="fas fa-shield-alt"></i></p>
+    <p>&copy; 2025 All Rights Reserved. This site is built and maintained by me, Kaleeswaran S., with a focus on security and development.</p>
+    <div class="footer-links">
+      <a href="https://github.com/KALEESWARANS-CYBER00" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://www.linkedin.com/in/kaleeswarans25" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://twitter.com/kevinmitnick" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+    </div>
+  </footer>
+
+  <canvas id="trailCanvas"></canvas>
+
+  <!-- Splash Screen -->
+  <div id="splashScreen">
+    <h1>🚧 This website is under development & being enhanced with new features 🚀</h1>
+  </div>
+
+  <script>
+
+    window.onload = function() {
+      setTimeout(function() {
+        document.getElementById('splashScreen').style.opacity = '0';
+        setTimeout(function() {
+          document.getElementById('splashScreen').style.display = 'none';
+        }, 1000); 
+      }, 3000); 
+    };
+  </script>
+  
   <script src="script.js"></script>
 </body>
 </html>
