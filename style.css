@@ -176,13 +176,6 @@ body {
     z-index: -1;
     pointer-events: none; 
   }
-  .ripple {
-    position: absolute;
-    border-radius: 50%;
-    background-color: rgba(0, 255, 150, 0.3); 
-    pointer-events: none;
-    animation: ripple-animation 1s ease-out;
-  }
   
   @keyframes ripple-animation {
     0% {
